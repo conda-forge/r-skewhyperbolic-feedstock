@@ -1,11 +1,11 @@
-About r-skewhyperbolic
-======================
+About r-skewhyperbolic-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-skewhyperbolic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://r-forge.r-project.org/projects/rmetrics/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-skewhyperbolic-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions are provided for the density function, distribution function, quantiles and random number generation for the skew hyperbolic t-distribution. There are also functions that fit the distribution to data. There are functions for the mean, variance, skewness, kurtosis and mode of a given distribution and to calculate moments of any order about any centre. To assess goodness of fit, there are functions to generate a Q-Q plot, a P-P plot and a tail plot.
 
