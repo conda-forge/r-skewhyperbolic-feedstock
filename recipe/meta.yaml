@@ -1,4 +1,4 @@
-{% set version = '0.4-0' %}
+{% set version = "0.4-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SkewHyperbolic_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SkewHyperbolic/SkewHyperbolic_{{ version }}.tar.gz
-  sha256: 995b31e8e528840b9ff6a1a007bd82c77ad3062677abe50546e3ac97e58a9dae
+  sha256: e64a548bc24157c0b0bfbd9c6f7629a85d911fc52a666a59da21553d71e2167e
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,12 +41,8 @@ test:
 about:
   home: https://r-forge.r-project.org/projects/rmetrics/
   license: GPL-2.0-or-later
-  summary: Functions are provided for the density function, distribution function, quantiles
-    and random number generation for the skew hyperbolic t-distribution. There are also
-    functions that fit the distribution to data. There are functions for the mean, variance,
-    skewness, kurtosis and mode of a given distribution and to calculate moments of
-    any order about any centre. To assess goodness of fit, there are functions to generate
-    a Q-Q plot, a P-P plot and a tail plot.
+  summary: Functions are provided for the density function, distribution function, quantiles and random number generation for the skew hyperbolic t-distribution. There are also functions that fit the distribution to data. There are functions for the mean, variance, skewness, kurtosis and mode of a given distribution and
+    to calculate moments of any order about any centre. To assess goodness of fit, there are functions to generate a Q-Q plot, a P-P plot and a tail plot.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
